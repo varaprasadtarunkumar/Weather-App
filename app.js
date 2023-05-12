@@ -23,7 +23,7 @@ const weatherData=JSON.parse(data) //used to convert hexadecimal json output to 
 const temp=weatherData.main.temp;
 const icon=weatherData.weather[0].icon;
 const imgURL="https://openweathermap.org/img/wn/"+icon+"@2x.png"
-res.write("<h1>The temperature at "+query+" is "+temp+" degrees celcius </h1>")
+res.write("<h1>The temperature at "+query+" is "+temp+" degrees Farenheit </h1>")
 res.write("<p> The server is up and running </p>")
 res.write("<img src=" + imgURL +">")
 res.send()
